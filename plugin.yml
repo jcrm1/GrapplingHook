@@ -1,0 +1,16 @@
+name: GrapplingHook
+main: com.jcrm1.GrapplingHook.GrapplingHook
+version: 1.0
+api-version: 1.8
+commands:
+   givehook:
+      description: Gives the user a Grappling Hook item
+      usage: /givehook
+permissions:
+    grapplinghook.*:
+        description: Gives access to all GrapplingHook permissions
+        children:
+            grapplinghook.givehook: true
+    grapplinghook.givehook:
+        description: Gives access to /givehook
+        default: false
